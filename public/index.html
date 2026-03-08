@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Todo List</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-slate-100 flex items-center justify-center min-h-screen">
+
+<div class="bg-white shadow-lg rounded-xl p-8 w-[400px]">
+
+<h1 class="text-2xl font-bold mb-6 text-center">To-Do List</h1>
+
+<div class="flex gap-2 mb-4">
+
+<input
+id="todoInput"
+placeholder="Add new task..."
+class="flex-1 border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+/>
+
+<button
+onclick="addTodo()"
+class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+>
+Add
+</button>
+
+</div>
+
+<ul id="todoList" class="space-y-2"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
